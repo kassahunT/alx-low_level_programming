@@ -1,22 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	char c;
-	int n;
+	int a;
 
-	for (n = 48; n < 58; n++)
+	a = 48;
+	while  (a < 58)
 	{
-		putchar(n);
-	}
-	for (c = 'a'; c  <= 'f'; c++)
-	{
-		putchar(c);
+		putchar(a);
+		if (a !=  57)
+		{
+			putchar(44);
+			putchar(32);
+			a++;
+		}
+		else
+		{
+			a++;
+		}
 	}
 	putchar('\n');
 	return (0);
