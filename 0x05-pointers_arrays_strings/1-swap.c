@@ -1,4 +1,5 @@
 #include"main.h"
+
 /**
  * swap_int-swaping 2 integer using a pointer
  * @a:integer
@@ -13,4 +14,5 @@ void swap_int(int *a, int *b)
 	*a = *b;
 	*b = x;
 	return;
+
 }
